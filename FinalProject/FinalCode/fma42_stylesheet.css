@@ -1,0 +1,825 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.header{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(43, 55, 105, 0.7), rgba(43,55,105,0.7)),url(images/banner.jpeg); 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  main {
+    grid-area: main;
+  }
+
+.connect{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(43, 55, 105, 0.7), rgba(43,55,105,0.7)),url(images/connect.jpeg); 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    !important
+}
+
+.journey{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(43, 55, 105, 0.7), rgba(43,55,105,0.7)),url(images/journey.jpeg); 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    !important
+}
+
+nav{
+    display: flex;
+    padding: 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+
+/*
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+@media (max-width: 300px){
+    .nav-links{
+        text-align: justify;
+    }
+
+}
+
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f5dc52;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+*/
+
+
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 46px;
+}
+
+.text-box p{
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #f5dc52;
+    background: #f5dc52;
+    transition: 0.5s;
+}
+
+@media ( max-width: 300px) { 
+    .text-box h1{
+        font-size: 22px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: #f5dc52;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+}
+
+.nav-links ul{
+    padding: 30px;
+}
+
+/* End of header -----------------------------------------------*/
+
+/*----- who -----*/
+.who{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: rgb(59, 75, 141) ;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+/*----- how -----*/
+.how{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+/*----- what -----*/
+.what{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+/* could delete*/
+h1, h2 {
+    text-align: center;
+  }
+  
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: rgb(59, 75, 141) ;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+.row{
+    margin-top: 5%;
+    display:flex;
+    justify-content: space-between;
+}
+
+
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.what-col{
+    flex-basis: 31%;
+    background: #7d72dd2c;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+
+.what-col:hover {
+    box-shadow: 0 0 10px 10px rgba(212, 216, 151, 0.63);
+}
+@media (max-width: 300px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+
+/* ---------------------------------- NEW PAGE: journey page sub titles --------------------- */
+
+/*----- books -----*/
+.books{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+/*----- causes -----*/
+.causes{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+/*----- how to -----*/
+.howspot{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+/*----- prev places -----*/
+.prevspot{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.prevspot-col{
+    /*flex-basis: 31%;*/
+    background: #e2e47048;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-top: 2.5%;
+    padding: 10px 12px;
+    /*box-sizing: border-box;*/
+    transition: 0.2s;
+}
+/* ----------------------------------END journey page sub titles --------------------- */
+
+
+/*----- final remark -----*/
+.final{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+
+h4{
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(59, 75, 141);
+}
+
+
+
+.prevspot-col:hover {
+    box-shadow: 0 0 10px 10px rgba(148, 176, 223, 0.198);
+}
+@media (max-width: 300px){
+    .row{
+        flex-direction: column;
+    }
+}
+*/
+
+/* ---------------- books-------------*/
+
+.books{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.books-col{
+    flex-basis: 32%;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.books-col img{
+    width: 85%;
+    height: 80%;
+    padding: 10px;
+    border-radius: 60px;
+    display: block;
+}
+
+
+
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    transition:0.5s ;
+}
+
+.layer:hover{
+    background: rgba(43, 55, 105, 0.219);
+    box-shadow: 0 0 4px 0 rgba(255, 255, 255, 0.918), 0 0 4px 0 rgba(0, 0, 0, 0.6) inset;
+    width:30rem;
+    height: 40rem;
+}
+
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: black;
+    font-size: 25px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity:0;
+    transition: 0.5s;
+
+}
+
+/* --------------- causes -------*/
+.causes{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:50px;
+}
+
+.causes-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+    padding:25px;
+    cursor: pointer;
+    display: flex;
+   
+
+}
+
+.causes-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+/* --------------- how to spot -------*/
+ 
+.howspot{
+    padding-top: 40px;
+    margin-top: 20px;
+}
+
+.contactus{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 40%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.icon{
+    margin-left: 0px;
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+
+.contact-col img{
+    width: 40%;
+    height: 40%;
+    padding: 70px;
+    border-radius: 30px;
+    
+}
+
+.contact-col div .icon{
+    font-size:28px;
+    color:rgb(59, 75, 141)
+    margin: 10px;
+    margin-right: 30px;
+    
+}
+
+.contact-col div p{
+    padding: 0; 
+
+}
+
+.contact-col div h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-col div h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: rgb(108, 118, 177);
+    font-weight: 600;
+}
+
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid rgb(72, 95, 185);
+    box-sizing: border-box;
+}
+
+
+
+
+h5{
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(59, 75, 141);
+}
+
+h6{
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(59, 75, 141);
+}
+
+
+.footer{
+    padding:50px 35px 30px 35px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Final_MainCode.Css */ 
+
+
+  [hidden] {
+    display: none;
+  }
+  
+  html {
+    background: #dbb1dd;
+    font-size: 90%;
+    height: 100%;
+  }
+
+
+  /*the circle wrap layout grid
+  
+  #signContainer {
+    height: 72rem;
+    margin: 0 auto 0;
+    position: relative;
+    width: 60rem;
+  
+    display: grid;
+    grid-template-areas:
+      ". mfl fishtown park ."
+      "ucity . . . rocky"
+      "chinatown . spin . chinatown"
+      "rocky . . . ucity"
+      ". park fishtown mfl .";
+    grid-template-columns: repeat(5, 25%);
+    grid-template-rows: repeat(5, 20%);
+    justify-items: stretch;
+  }
+ 
+  .sign {
+    display: block;
+    width: 6.25rem; 
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  
+  button.sign:hover {
+    cursor: pointer;
+  }
+  
+ 
+  button.sign img {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+  */
+    /* displayed icons 
+    border-radius: 5rem;
+    opacity: 0.7;
+    transition: opacity 0.25s ease-in-out, filter 0.25s ease-in-out;
+  }
+
+
+  button.sign:hover img,
+  button.sign:focus img {
+    filter: drop-shadow(0 0.1rem 0.5rem rgba(0, 0, 0, 0.6));
+    opacity: 1;
+  }
+  
+  button.sign p {
+    position: relative;
+    top: -0.5rem;
+  
+    font-family: "MontserratRegular", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+  
+    transition: top 0.25s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+  }
+  
+  button.sign:hover p,
+  button.sign:focus p {
+    opacity: 1;
+    top: -0.25rem;
+  }
+  */
+
+  /* positioning in the circle
+  
+  #fishtown {
+    grid-area: fishtown;
+    top: 2.3625rem;
+    right: 3rem;
+  }
+
+  
+  #park {
+    grid-area: park;
+    top: 6rem;
+    right: 6rem;
+  }
+  
+  #rocky {
+    grid-area: rocky;
+    right: 11.5rem;
+    bottom: 2rem;
+    
+  }
+  
+  #chinatown {
+    grid-area: chinatown;
+    right: 6rem;
+    bottom: 4rem;
+  }
+  
+  #ucity {
+    grid-area: ucity;
+    right: 11.2rem;
+    bottom: 6rem;
+  }
+  
+  #mfl {
+    grid-area: mfl;
+    bottom: 13rem;
+    right: 6rem;
+  }
+  
+
+  #libra {
+    grid-area: libra;
+    right: 3rem;
+    bottom: 7rem;
+  }
+  
+  #scorpio {
+    grid-area: scorpio;
+    bottom: 13rem;
+  }
+  
+  #sagittarius {
+    grid-area: sagittarius;
+    left: 5rem;
+    bottom: 6rem;
+  }
+  
+  #capricon {
+    grid-area: capricon;
+    bottom: 4rem;
+  }
+  
+  #aquarius {
+    grid-area: aquarius;
+    left: 5rem;
+    bottom: 2rem;
+  }
+  
+  #pisces {
+    grid-area: pisces;
+    top: 6rem;
+  }
+  
+ */
+
+  #js-click-me {
+    grid-area: pisces;
+    top: 10rem;
+  }
+
+  
+  #overlay {
+    width: 100vw;
+    height: 100vh;
+  
+    background-color: rgba(222, 233, 66, 0.465);
+    color: #f7f7f7;
+    
+    grid-area: 1 / 1 / -1 / -1;
+    position: fixed;
+    z-index: 20;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .noScroll { 
+    overflow: hidden;
+  }
+  
+  
+
+/* animations */
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  .row{
+      margin-top: 5%;
+      display:flex;
+      justify-content: space-between;
+  }
+  
+  
+  .fadeIn {
+    animation: fadeIn 0.6s ease-in-out forwards;
+    display: flex;
+  }
+  
+  .fadeOut {
+    animation: fadeOut 0.5s ease-in-out forwards;
+    display: flex;
+  }
+
+  
+  .overlayClose {
+    grid-area: close;
+    height: 2.5rem;
+    width: 9rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    border: 2px solid #ffffff;
+    font-family: "Potra", Arial, Helvetica, sans-serif;
+    font-size: 1.75rem;
+    color: #ffffff;
+    cursor: pointer;
+    opacity: 0.7;
+    background: none;
+    transition: text-shadow 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+  }
+  
+   /* noth*/
+  .overlayClose:hover, .overlayClose:focus {
+    text-shadow: 0 0 4px rgba(214, 210, 157, 0.698);
+    box-shadow: 0 0 4px 0 rgba(255, 255, 255, 0.918), 0 0 4px 0 rgba(0, 0, 0, 0.6) inset;
+  }
+  
+  /* overlay popup */
+  
+  .infoContainer {
+    width: 50rem;
+    height: 10rem;
+    
+    padding: 5rem;
+    
+    display: grid;
+    align-items: center;
+    grid-template-columns: 22.5rem 5rem 22.5rem;
+    grid-template-rows: 3rem 1.5rem 1fr 10rem 2rem 1fr 3rem;
+    grid-template-areas:
+    "heading heading heading"
+    "subhead subhead subhead"
+    ". . ."
+    "method . method2"
+    "desc . desc2"
+    ". . ."
+    "close close close";
+    justify-items: center;
+    
+    background: #dbb1dd; 
+    border-radius: 4rem;
+    box-shadow: 0 0 9px 2px rgba(0,0,0,0.6);
+  }
+  
+  .overlayHeading {
+    grid-area: heading;
+  }
+  
+  .overlaySubhead {
+    grid-area: subhead;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    opacity: 0.8;
+  }
+  
+
+  .overlayDesc {
+    grid-area: desc;
+  }
+  
+  .overlayDesc2 {
+    grid-area: desc2;
+  }
+ 
+  .hidden {
+    display: none !important;
+  }
+  
+
+
+
+
